@@ -1,0 +1,69 @@
+@media screen {
+    body h3 {
+
+        font-size: 2.0rem;
+    
+    }
+    
+}
+
+@media screen and (max-width: 792px) {
+
+
+    body h3 {
+        font-size: 1.5rem;
+        
+    }
+    
+    body h2 {
+        font-size: 1.3rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+    body h3 {
+        
+        font-size: 0.7rem;
+
+    }
+    body h1{
+
+        font-size:0.7rem ;
+    }
+    body h2{
+
+        font-size:0.7rem ;
+    }
+
+}
+.font{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: justify;
+}
+.mar{
+    margin-bottom:100px;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(14, 14, 143);
+    opacity: 0.5;
+}
+.tam{
+    height: 100%;
+}
+.mac{
+    margin-bottom:50px;
+    margin-top: 150px;
+    color: rgb(239, 239, 243);
+    margin: 2%;
+    
+}
+.op{
+    opacity: 0.9;
+}

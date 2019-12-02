@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/cadastro.css">
+
+</head>
+
+
+<body background="\image\bg.jpg">
+
+
+    <main class="container  text-center" background="\image\bg.jpg">
+
+        <article class="row opac">
+
+            <section class="col-8 bg-dark alinhado" id="name">
+                <h1>MARCOS CARVALHO IMPORTS</h1>
+            </section>
+
+            <section class="col-4 bg-dark">
+                <figure>
+                    <img src="/image/LOGOmc.png" width="75%">
+
+                </figure>
+
+            </section>
+
+            <section class="centralizar">
+                <form name="cad forme">
+                    <fieldset>
+                        <h1 class="bg-white -white">INSIRA SEUS DADOS.</h1>
+                        <br>
+                        <section class="row">
+                            <div class="col">
+                                <input required id="nome" type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="col">
+                                <input required type="text" class="form-control" placeholder="Sobrenome">
+                            </div>
+                        </section>
+
+                        <br>
+
+                        <section class="row">
+                            <div class="col">
+                                <input required type="password" class="form-control" placeholder="Senha">
+                            </div>
+                            <div class="col">
+                                <input required type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                        </section>
+
+                        <br>
+                        <section class="row">
+                            <div class="col">
+                                <input required type="tel number" class="form-control" placeholder="telefone">
+                            </div>
+
+                            <div class="col">
+                                <input required type="number" min="1" max="110" value="18" class="form-control"
+                                    placeholder="idade">
+                            </div>
+                        </section>
+
+
+                        <section class="row">
+                            <div class="col">
+                                <label for="inputCity"></label>
+                                <input required type="text" class="form-control" id="inputCity" placeholder="Endereço">
+                            </div>
+                        </section>
+                        <section class="row">
+                            <div class="col ">
+                                <label for="inputEstado"></label>
+                                <select id="inputEstado" class="form-control">
+                                    <option selected>Estado...</option>
+                                    <option>Rio Grande do Norte</option>
+                                    <option>Rio Grande do Sul</option>
+                                    <option>Rio de Janeiro</option>
+                                    <option>Brasília</option>
+                                    <option>Outro Estado</option>
+                                </select>
+                            </div>
+
+                        </section>
+                        <section class="row">
+
+                            <div class=" col">
+                                <label for="inputCEP"></label>
+                                <input required type="text" class="form-control" id="inputCEP" placeholder="CEP">
+
+                            </div>
+                        </section>
+                        <br>
+                        <button onsubmit="mostrar()" type="submit" class="btn btn-primary"
+                            onClick="mostrar()">Entrar</button>
+                    </fieldset>
+                </form>
+
+
+            </section>
+
+
+        </article>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="bg-white text-center">
+        <p>© 2019 MarcosCarvalhoImports, Inc</p>
+    </footer>
+    <script>
+
+        function validaCampo() {
+            var nome = document.getElementById("nome").value;
+            var login = document.getElementById("login").value;
+            var idade = document.getElementById("idade").value;
+            var cep = document.getElementById("inputCEP").value;
+
+
+            if (cep > 10) {
+                window.alert('Preencha o campo com seu nome');
+                cad.imputCEP.focus();
+                return false;
+
+            }
+            document.getElementById("enviar").addEventListener("click", e => {
+                e.preventDefault()
+            })
+            function mostrar() {
+
+                var nome = document.getElementById("nome").value;
+                alert("asdasda")
+
+            }
+
+    </script>
+
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

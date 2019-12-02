@@ -1,0 +1,66 @@
+@media screen {
+    body h1 {
+
+        font-size: 2.0rem;
+    }
+}
+
+@media screen and (max-width: 792px) {
+
+
+    body h1 {
+        font-size: 1.0rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+    body h1 {
+        font-size: 0.9rem;
+
+    }
+
+
+}
+
+#name {
+    background-color: rgb(44, 53, 53);
+    font-size: 1.5rem;
+    font-family: Marker felt;
+    color: peru;
+    font-style: italic;
+
+}
+
+.alinhado {
+
+
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centralizar {
+    width: 100vw;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.forme{
+
+    margin: 25px 10px 10px 10px;
+}
+.opac{
+    opacity: 0.8;
+}
