@@ -33,9 +33,9 @@
             </section>
 
             <section class="centralizar">
-                <form name="cad forme">
+                <form name="form" action="/html/loja.html">
                     <fieldset>
-                        <h1 class="bg-white -white">INSIRA SEUS DADOS.</h1>
+                        <legend class="bg-white -white"> DADOS PESSOAIS</legend>
                         <br>
                         <section class="row">
                             <div class="col">
@@ -50,22 +50,19 @@
 
                         <section class="row">
                             <div class="col">
-                                <input required type="password" class="form-control" placeholder="Senha">
+                                <input required type="password" class="form-control" placeholder="Senha" name="senha">
                             </div>
                             <div class="col">
-                                <input required type="email" class="form-control" placeholder="E-mail">
+                                <input required type="email" class="form-control" placeholder="E-mail" id="email">
                             </div>
                         </section>
 
                         <br>
                         <section class="row">
-                            <div class="col">
-                                <input required type="tel number" class="form-control" placeholder="telefone">
-                            </div>
 
                             <div class="col">
-                                <input required type="number" min="1" max="110" value="18" class="form-control"
-                                    placeholder="idade">
+                                <input width="90%px" required type="number" min="18" max="110" value="idade"
+                                    class="form-control" placeholder="idade minima 18 anos" id="idade">
                             </div>
                         </section>
 
@@ -73,7 +70,8 @@
                         <section class="row">
                             <div class="col">
                                 <label for="inputCity"></label>
-                                <input required type="text" class="form-control" id="inputCity" placeholder="Endereço">
+                                <input required type="text" class="form-control" id="inputCity" placeholder="Endereço"
+                                    id="endereço">
                             </div>
                         </section>
                         <section class="row">
@@ -94,13 +92,13 @@
 
                             <div class=" col">
                                 <label for="inputCEP"></label>
-                                <input required type="text" class="form-control" id="inputCEP" placeholder="CEP">
+                                <input required type="number" class="form-control" id="inputCEP" placeholder="CEP"
+                                    id="cep">
 
                             </div>
                         </section>
                         <br>
-                        <button onsubmit="mostrar()" type="submit" class="btn btn-primary"
-                            onClick="mostrar()">Entrar</button>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
                     </fieldset>
                 </form>
 
@@ -112,44 +110,12 @@
 
 
 
-
-
-
-
-
-
-
     </main>
 
     <footer class="bg-white text-center">
         <p>© 2019 MarcosCarvalhoImports, Inc</p>
     </footer>
-    <script>
 
-        function validaCampo() {
-            var nome = document.getElementById("nome").value;
-            var login = document.getElementById("login").value;
-            var idade = document.getElementById("idade").value;
-            var cep = document.getElementById("inputCEP").value;
-
-
-            if (cep > 10) {
-                window.alert('Preencha o campo com seu nome');
-                cad.imputCEP.focus();
-                return false;
-
-            }
-            document.getElementById("enviar").addEventListener("click", e => {
-                e.preventDefault()
-            })
-            function mostrar() {
-
-                var nome = document.getElementById("nome").value;
-                alert("asdasda")
-
-            }
-
-    </script>
 
 
     <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"

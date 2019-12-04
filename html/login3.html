@@ -20,10 +20,10 @@
         <header>
             <nav class="navbar navbar-dark bg-dark navbar-expand-sm ml-auto">
 
-                <a href="#" class="navbae-brand">
+                <a href="/Index.html" class="navbae-brand">
                     <figure>
 
-                        <img src="\image\LOGOmc.png" alt="não" width="23%" height="25%" opacity="0.5" />
+                        <!-- <img src="\image\LOGOmc.png" alt="não" width="23%" height="25%" opacity="0.5" /> -->
 
                         <figcaption>
                             <h1>
@@ -56,7 +56,7 @@
         <article>
             <div class="alinhado container text-center" background="image\bg.jpg">
 
-                <form class="text-center">
+                <form class="text-center" name="form" action="/html/loja.html">
                     <h2 class="text-light text-left">LOGIN</h2>
                     <br>
                     <section>
@@ -65,8 +65,9 @@
 
 
                             <div class="col-sm-10">
-                                <input required type="email" class="form-control" id="inputEmail3" required
-                                    placeholder="Digite o seu email">
+                                <input id="email" type="email" class="form-control" id="inputEmail3"
+                                    placeholder="Digite o seu email" required x-moz-errormessage="Ops. 
+                                    Não esqueça de preencher este campo.">
                             </div>
                         </div>
                     </section>
@@ -74,23 +75,23 @@
                         <div class="form-group row ">
 
                             <div class="col-sm-10">
-                                <input required type="password" class="form-control" id="inputPassword3" required
-                                    placeholder=" digite sua senha" minlenght="6" maxlength="8">
+                                <input id="senha" type="password" class="form-control" placeholder=" digite sua senha"
+                                    minlenght="6" maxlength="8" required x-moz-errormessage="Ops. 
+                                    Não esqueça de preencher este campo.">
                             </div>
                         </div>
                     </section>
                     <section>
 
                         <div class="form-group row text-left ">
-                            <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary " onclick="paginaLoja()">Avançar </button>
+                            <div class=" form col-sm-10">
 
+                                <button type="submit" class="btn btn-primary">Avançar
+                                </button>
                             </div>
-
                         </div>
-                    </section>
-
-                    <a class=" text-light" href="/html/cadastro3.html"> Se não é registrado crie uma conta!</a>
+                    </section> <a class=" text-light" href="/html/cadastro3.html"> Se não é registrado crie uma
+                        conta!</a>
 
                 </form>
                 <br><br>
@@ -100,9 +101,9 @@
 
         </article>
 
-        <footer class="text-center bg-white">
+        <div class="text-center bg-white">
             <p>© 2019 MarcosCarvalhoImports, Inc</p>
-        </footer>
+        </div>
 
         <script>
             function paginaLoja() {
@@ -111,8 +112,18 @@
             }
         </script>
     </main>
+    <footer>
+        <div class="text-center">
+            <p>© 2019 MarcosCarvalhoImports, Inc</p>
+        </div>
+    </footer>
 
     <!-- scripts -->
+    <script>
+        var senha = document.getElementById("senha").value;
+        var email = document.getElementById("email").value;
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -59,7 +59,7 @@
 div h1 {
     font-size: 1.5rem;
     font-family: Marker felt;
-    color: rgb(252, 238, 50);
+    color: rgb(250, 250, 248);
     font-style: italic;
 }
 
@@ -78,4 +78,9 @@ div p {
 main{
 
     opacity: 0.8;
+
+}
+.a{
+
+    color: cornsilk;
 }

@@ -8,6 +8,12 @@
     align-items: center;
     background src="image\bg.jpg"
 }
+.h2{
+
+    
+    opacity: 0.5;
+    
+}
 
 
 @media screen {
@@ -39,3 +45,5 @@
 
 
 }
+
+ 
